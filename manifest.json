@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "mintues to Digiti hours",
+  "description": "This extension adds the ability to enter minutes as an Entry unit.",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["*://admin.digiti.be/*"],
+      "js": ["javascripts/background.js"]
+    }
+  ],
+
+  "browser_action": {
+    "default_icon": "digithourly-icon.png"
+  }
+}
