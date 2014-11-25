@@ -1,0 +1,24 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.custom-hours {
+  margin-bottom: 6px;
+}
+
+.digithours input {
+  width: 100px;
+}
+
+.entry-label {
+  position: absolute;
+  left: 93px;
+  top: 5px;
+  line-height: 31px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #828282;
+  border: 0;
+}

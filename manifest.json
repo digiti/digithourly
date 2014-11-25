@@ -7,10 +7,18 @@
 
   "content_scripts": [
     {
-      "matches": ["*://admin.digiti.be/*"],
+      "matches": ["file:///*", "*://admin.digiti.be/*"],
+      "css": [
+        "stylesheets/entry.css"
+      ],
       "js": [
+        "javascripts/digi_time.js",
+        "javascripts/regular_time.js",
         "javascripts/digithourly.js",
         "javascripts/background.js"
+      ],
+      "html": [
+        "popup.html"
       ]
     }
   ],
