@@ -22,3 +22,12 @@ body {
   color: #828282;
   border: 0;
 }
+
+input[type="time"] {
+  margin-bottom: 10px;
+  padding: 0 5px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Helvetica-neue", "Helvetica", "Arial", "sans-serif";
+}
