@@ -7,10 +7,12 @@ var DigiTime = function(value) {
 DigiTime.prototype = (function() {
   var convertMinutes = function(minutes) {
     console.log(minutes)
-    var minutes = (minutes / 60)
-      .toString()
-      .split('.')[1]
-      .substr(0,2);
+    if (minutes > 0) {
+      minutes = (minutes / 60)
+        .toString()
+        .split('.')[1]
+        .substr(0,2);
+    }
 
     return minutes;
   }
