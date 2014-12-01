@@ -26,13 +26,12 @@ DigitEntry.prototype = (function() {
   var setNewInput = function() {
     var value = this.originalInput.value;
     var regularTime = new RegularTime(value);
-    this.newInput.value = regularTime.getTime();
+    this.newInput.value = regularTime.convert();
   };
 
   var setOriginalInput = function(value) {
     var digitime = new DigiTime(value)
-    console.log(digitime.getTime());
-    this.originalInput.value = digitime.getTime();
+    this.originalInput.value = digitime.convert();
   }
 
   var listenToEvents = function() {

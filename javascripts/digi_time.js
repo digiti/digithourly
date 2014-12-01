@@ -1,3 +1,6 @@
+/*
+ * Convert regular time to DigiTime
+ */
 var DigiTime = function(value) {
   this.time    = value;
   this.hours   = this.time.split(':')[0];
@@ -18,7 +21,7 @@ DigiTime.prototype = (function() {
   }
 
   return {
-    getTime: function() {
+    convert: function() {
       return this.hours + "." + convertMinutes(this.minutes);
     }
   }

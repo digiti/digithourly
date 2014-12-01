@@ -20,7 +20,7 @@ RegularTime.prototype = (function() {
   }
 
   return {
-    getTime: function() {
+    convert: function() {
       return pad(this.hours, 2) + ":" + convertMinutes(this.minutes);
     }
   }
