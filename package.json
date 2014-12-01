@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/digiti/digitime/issues"
   },
-  "homepage": "https://github.com/digiti/digitime"
+  "homepage": "https://github.com/digiti/digitime",
+  "devDependencies": {
+    "qunitjs": "^1.15.0"
+  }
 }
