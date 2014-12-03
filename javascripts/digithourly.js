@@ -1,7 +1,7 @@
 var DigitEntry = function(element) {
   this.element = element;
 
-  this.template = '<input type="time" name="cttime" value="23:15:00">';
+  this.template = '<input type="time" name="cttime" value="23:15:00" tabindex="1">';
 };
 
 DigitEntry.prototype = (function() {
